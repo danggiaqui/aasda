@@ -1,0 +1,336 @@
+{
+  "id": "cb9e82c7-1d17-4bfe-a83b-81f00bce7ac6",
+  "version": "2.0",
+  "name": "demo1",
+  "url": "https://www.thegioididong.com/",
+  "tests": [{
+    "id": "6a7a680c-6982-47ff-ab9f-771b047f0896",
+    "name": "TC5",
+    "commands": [{
+      "id": "9f5ee3c8-4216-4e50-96ea-c46fd3707dfd",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.thegioididong.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "759eea50-68dd-47fb-88c1-0868cab69409",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f5d08505-2a60-4e6b-b062-1baae9698a6e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-menu > li:nth-child(1)",
+      "targets": [
+        ["css=.main-menu > li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,' Điện thoại')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2626c339-3ca7-4ca6-aa04-be18cca2f1b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-menu > li:nth-child(1) span",
+      "targets": [
+        ["css=.main-menu > li:nth-child(1) span", "css:finder"],
+        ["xpath=//li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Điện thoại')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae7a4ac8-ba85-4d9f-84a0-aef3fa53f2a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.box-quicklink__item:nth-child(1) > .no-text",
+      "targets": [
+        ["css=.box-quicklink__item:nth-child(1) > .no-text", "css:finder"],
+        ["xpath=//div[9]/section/div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd1c4b79-adc9-475d-8c8b-15dbd878c83a",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"filter-follow-manu\"]/a[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fac906e8-d026-4570-91be-7dbbc7c61c8e",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "//*[@id=\"categoryPage\"]/div[3]/ul/li",
+      "targets": [],
+      "value": "n"
+    }, {
+      "id": "ff0c8061-74f1-4451-bad4-842d956362ae",
+      "comment": "",
+      "command": "storeText",
+      "target": "//*[@id=\"categoryPage\"]/div[3]/ul/li[1]/a/strong",
+      "targets": [],
+      "value": "tiensp1"
+    }, {
+      "id": "917b5123-f282-4595-a7c1-8113b8282f9d",
+      "comment": "",
+      "command": "echo",
+      "target": "${tiensp1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c62b754-c6a6-4f2f-b4d9-07fa498e5c31",
+      "comment": "",
+      "command": "echo",
+      "target": "${n}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51d975b5-916e-4ef2-8f29-b616a65e5d7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.item:nth-child(1) .item-img > img",
+      "targets": [
+        ["css=.item:nth-child(1) .item-img > img", "css:finder"],
+        ["xpath=(//img[@alt='iPhone 11'])[2]", "xpath:img"],
+        ["xpath=//section[@id='categoryPage']/div[3]/ul/li/a/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d9fbac1-dd03-479e-a080-0e3c96ec1b66",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MUA NGAY",
+      "targets": [
+        ["linkText=MUA NGAY", "linkText"],
+        ["css=.normal > .btn-buynow", "css:finder"],
+        ["xpath=(//a[contains(text(),'MUA NGAY')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div[3]/div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b08d5e76-3461-4662-a98f-1a73f8a3d23f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ordered:nth-child(9)",
+      "targets": [
+        ["css=.ordered:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='app']/section/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "372033f9-0608-453b-bc51-ad95eb073110",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseFloat(${tiensp1}.replace(/[.]/g,\"\").substring(0,${tiensp1}.length-1))",
+      "targets": [],
+      "value": "tiensp1"
+    }, {
+      "id": "a6db660d-d1f0-4e9b-9917-4530b3295480",
+      "comment": "",
+      "command": "echo",
+      "target": "${tiensp1}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f611942c-291a-4953-a045-3654ee9e4bf4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 2",
+      "targets": [],
+      "value": "dem"
+    }, {
+      "id": "9c68fdd3-df6f-45e2-85e8-6868a7d806d1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${tiensp1}",
+      "targets": [],
+      "value": "tongtien"
+    }, {
+      "id": "8c34d179-33f8-4ec7-94e9-684f77fc1d00",
+      "comment": "",
+      "command": "while",
+      "target": "${dem}<=${n}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95bd3625-8d87-47e8-aaba-6c0fa632107a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-menu > li:nth-child(1)",
+      "targets": [
+        ["css=.main-menu > li:nth-child(1)", "css:finder"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,' Điện thoại')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f629ad2d-b225-4ad9-a24f-4ba1cb75e893",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-menu > li:nth-child(1) span",
+      "targets": [
+        ["css=.main-menu > li:nth-child(1) span", "css:finder"],
+        ["xpath=//li/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Điện thoại')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aed4ef8e-b923-45e6-b8f9-4bfbbe7fe06e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.box-quicklink__item:nth-child(1) > .no-text",
+      "targets": [
+        ["css=.box-quicklink__item:nth-child(1) > .no-text", "css:finder"],
+        ["xpath=//div[9]/section/div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4842b14-c0d9-4d49-bb8f-db63fd22e3b1",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"filter-follow-manu\"]/a[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e4f9ca7-3000-41a6-8506-73e1401de07e",
+      "comment": "",
+      "command": "storeText",
+      "target": "//*[@id=\"categoryPage\"]/div[3]/ul/li[${dem}]/a/strong",
+      "targets": [],
+      "value": "tiensp"
+    }, {
+      "id": "c8da0c20-07da-47e0-a12f-ef7a80f6e03b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseFloat(${tiensp}.replace(/[.]/g,\"\").substring(0,${tiensp}.length-1))",
+      "targets": [],
+      "value": "tiensp"
+    }, {
+      "id": "c7547fe3-2e51-406f-b184-617ff9b5d0e2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${tongtien}+${tiensp}",
+      "targets": [],
+      "value": "tongtien"
+    }, {
+      "id": "0d6cb682-c080-4619-86a7-556bb295aa81",
+      "comment": "",
+      "command": "echo",
+      "target": "${tongtien}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6857aaf-abe5-49a8-97f1-63097d811220",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"categoryPage\"]/div[3]/ul/li[${dem}]/a/h3",
+      "targets": [
+        ["css=.item:nth-child(1) .item-img > img", "css:finder"],
+        ["xpath=(//img[@alt='iPhone 11'])[2]", "xpath:img"],
+        ["xpath=//section[@id='categoryPage']/div[3]/ul/li/a/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a447e233-9f67-4783-824f-6e62738bb59a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MUA NGAY",
+      "targets": [
+        ["linkText=MUA NGAY", "linkText"],
+        ["css=.normal > .btn-buynow", "css:finder"],
+        ["xpath=(//a[contains(text(),'MUA NGAY')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div[3]/div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7f5ee3a-ad61-4684-ae80-2d3e2b996550",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ordered:nth-child(9)",
+      "targets": [
+        ["css=.ordered:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='app']/section/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69cc0897-2225-4786-a14d-368e91e49581",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${dem}+1",
+      "targets": [],
+      "value": "dem"
+    }, {
+      "id": "61aca61a-9d64-4dd7-9ca8-6b97664827d3",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89ecb2bf-68a0-461d-84e7-4e9f330cba55",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@class='header__top']/div/a[4]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2eed8536-a51a-4c24-bbdf-e9eff66cf5b3",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.temp-total-money",
+      "targets": [
+        ["css=.temp-total-money", "css:finder"],
+        ["xpath=//div[@id='app']/section/div[2]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div/span[2]", "xpath:position"]
+      ],
+      "value": "tong"
+    }, {
+      "id": "1ccfb9cf-3d12-411b-81e1-39bade8a658a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseFloat(${tong}.replace(/[.]/g,\"\").substring(0,${tong}.length-1))",
+      "targets": [],
+      "value": "tong"
+    }, {
+      "id": "ea1afd4c-3bd5-4f3d-a3de-a6af01c7d4ef",
+      "comment": "",
+      "command": "echo",
+      "target": "${tong}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2db5050-217e-4c0c-a85e-51edc80851ac",
+      "comment": "",
+      "command": "verify",
+      "target": "tong",
+      "targets": [],
+      "value": "${tongtien}"
+    }, {
+      "id": "829ad29f-bdbd-4d9b-8eca-a772854fc98f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b564a6c2-c191-403b-8984-e5a630d92618",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://demo.gondolatest.com/", "https://www.thegioididong.com/"],
+  "plugins": []
+}
